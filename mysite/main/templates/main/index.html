@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+{%load static%}
+
+{% block body%}
+<div class="features">
+    <h1> Здравствуйте, меня зовут Андрей Баранов</h1>
+    <h2> Данный сайт создан с целью ознакомления работадателей и улучшения своих навыков программирования</h2>
+    <h2> Стек технологий используемый при создании данного сайта</h2>
+    <img src="{% static 'main/image/python.png' %}" alt="python">
+    <img src="{% static 'main/image/django.png' %}" alt="django">
+    <img src="{% static 'main/image/jinja.png' %}" alt="jinja">
+    <img src="{% static 'main/image/bootstrap.png' %}" alt="bootstrap">
+    <img src="{% static 'main/image/css.png' %}" alt="css">
+    <img src="{% static 'main/image/html.png' %}" alt="html">
+</div>
+{% endblock %}

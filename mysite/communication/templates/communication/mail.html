@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+
+{% block body%}
+<div class="features">
+    <h2>Написать мне</h2><br>
+    <form method ="post">
+        {% csrf_token%}
+        {{ form.email }}<br>
+        {{ form.number }}<br>
+        {{ form.message }}<br>
+        <span>{{error}}</span>
+        <button class="btn btn-success" type="submit">Отправить</button>
+    </form>
+
+</div>
+{% endblock %}
